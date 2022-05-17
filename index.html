@@ -4,68 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>YouTube</title>
   </head>
   <body>
-    <h1 id="title1" class="title">제목 1</h1>
-    <h2 class="title">제목 2</h2>
-    <h3 class="title">제목 3</h3>
-    <h3 class="title">제목 3</h3>
-    <h3 class="title">제목 3</h3>
-    <h3 class="title">제목 3</h3>
-    <h4 class="title">제목 4</h4>
-    <h5 class="title">제목 5</h5>
-    <h6 class="title">제목 6</h6>
-
-    <p>alksjdljflkjlksdjlkfjlkjlkj</p>
-    <p>alksjdljflkjlksdjlkfjlkjlkj</p>
-    <p>alksjdljflkjlksdjlkfjlkjlkj</p>
-
-    <a>안녕하세요</a>
-    <span>반갑습니다</span>
-    <code>hello world</code>
-    <small>small word</small>
-
-    <ol>
-      <li>목록 1</li>
-      <li>목록 2</li>
-      <li>목록 3</li>
-      <li>목록 4</li>
-    </ol>
-
-    <hr />
-
-    <a href="https://www.naver.com/" target="_blank">네이버로 가기</a>
-
-    <img src="mdn-info.png" alt="웹개발" />
-
-    <form>
-      <label for="main">입력</label>
-      <input
-        id="main"
-        type="text"
-        placeholder="여기에 작성하세요"
-        value="기본"
-      />
-      <input type="submit" value="여기를 클릭하세요" />
-      <button>여기를 클릭하세요</button>
-    </form>
-
-    <div id="mother">
-      <div class="child">1</div>
-      <div class="child">2</div>
-      <div class="child">3</div>
-      <div class="child">4</div>
-      <div class="child">5</div>
-      <div class="child">6</div>
-      <div class="child">7</div>
-    </div>
-
-    <style>
-      h3 {
-        background-color: rebeccapurple;
-      }
-    </style>
+    <header class="header">
+      <section class="header__left">
+        <button class="header__left__button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="/" class="header__left__home">
+          <i class="fa-brands fa-youtube"></i>
+          <h1>YouTube</h1>
+        </a>
+      </section>
+      <section class="header__middle">
+        <form class="header__middle__search">
+          <input
+            type="text"
+            placeholder="검색"
+            class="header__middle__search__input"
+          />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <button><i class="fa-solid fa-microphone"></i></button>
+      </section>
+      <section class="header__right">
+        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        <button>
+          <i class="fa-solid fa-circle-user"></i>
+          <span>로그인</span>
+        </button>
+      </section>
+    </header>
+    <script
+      src="https://kit.fontawesome.com/b2a7e4c847.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
